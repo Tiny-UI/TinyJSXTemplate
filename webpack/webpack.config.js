@@ -2,7 +2,7 @@ const path = require('path');
 
 const fs = require('fs-extra');
 
-let json = fs.readJsonSync(path.resolve(__dirname, '../tiny.json'))
+let json = fs.readJsonSync(path.resolve(__dirname, '../app.config.json'))
 
 let pages = json.runtime.pages;
 
