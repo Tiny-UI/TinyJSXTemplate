@@ -19,7 +19,7 @@
     "keystore": {
       "keyAlias": "debug",
       "keyPassword": "com.sunmi.elephant.debug",
-      "storeFilePath": "./android/signing/debug.keystore",
+      "storeFilePath": "./android/mock/signing/debug.keystore",
       "storePassword": "com.sunmi.elephant.debug"
     },
     "launcherIcon": [
