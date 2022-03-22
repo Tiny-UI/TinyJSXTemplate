@@ -39,6 +39,6 @@
     "versionCode": 1,
     "versionName": "0.0.1"
   },
-  "projectType": "es6",
+  "projectType": "jsx",
   "DisableOpenBrowser": false
 }
