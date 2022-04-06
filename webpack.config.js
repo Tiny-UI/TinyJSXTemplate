@@ -2,13 +2,13 @@ const path = require('path');
 
 const fs = require('fs-extra');
 
-let json = fs.readJsonSync(path.resolve(__dirname, '../app.config.json'))
+let json = fs.readJsonSync(path.resolve(__dirname, './app.config.json'))
 
 let pages = json.runtime.pages;
 
 let entry = {}
 
-let projectPath = path.resolve(__dirname, "../")
+let projectPath = path.resolve(__dirname, "./")
 
 for (let i = 0; i < pages.length; i++) {
     entry[pages[i].name] = getAbsPath(projectPath, pages[i].source);
@@ -20,7 +20,7 @@ module.exports = {
     entry: entry,
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, '../build'),
+        path: path.resolve(__dirname, './build'),
         clean: false,
     },
     resolve: {
